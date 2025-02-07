@@ -1,4 +1,4 @@
-import { getImportsFromCode } from "@tscircuit/prompt-benchmarks/code-runner-utils"
+import { getImportsFromCode } from "lib/utils/get-imports-from-code"
 import type { ExecutionContext } from "./execution-context"
 import { importEvalPath } from "./import-eval-path"
 import * as Babel from "@babel/standalone"
