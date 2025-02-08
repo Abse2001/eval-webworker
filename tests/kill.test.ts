@@ -15,7 +15,7 @@ describe("kill method", () => {
 
     // Verify worker is terminated by attempting to execute code
     expect(
-      await worker.execute(`console.log("Should not execute");`),
+      worker.execute(`console.log("Should not execute");`),
     ).rejects.toThrow() // Worker termination should cause execution to fail
   })
 })
